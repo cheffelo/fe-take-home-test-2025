@@ -28,9 +28,9 @@ export default function Home() {
             </p>
             <p>
               Implement the <code>handleAddToFavorites</code> and{" "}
-              <code>handleRemoveFromFavorites</code>
-              functions in the <code>ListingCard</code> component while also
-              updating the UI to reflect the change.
+              <code>handleRemoveFromFavorites</code> functions in the{" "}
+              <code>ListingCard</code> component while also updating the UI to
+              reflect the change.
             </p>
             <p>
               There should also be a way to show all the user's favorite
