@@ -3,22 +3,26 @@ import Link from "next/link";
 export default function Home() {
   return (
     <main className="p-4">
-      <h1>
+      <h1 className="mb-8">
         <strong>
-          Cheffelo Take-home test (choose <em>one</em> task)
+          Cheffelo take-home test (choose <em>one</em> task)
         </strong>
       </h1>
 
       <p>
         This application is a simple listing app that displays a list of cars
-        for sale. The app is built with Next.js, Redux Toolkit, and TailwindCSS.
+        for sale. Users are able to mark car listings as favorites, and they can
+        see their favorited listings in a separate view. The app is built with
+        Next.js, Redux Toolkit, and TailwindCSS.
       </p>
 
       <section>
         <ol className="flex flex-col gap-4">
           <li>
             <p>
-              <strong>Task 1</strong>
+              <h2>
+                <strong>Task 1</strong>
+              </h2>
             </p>
             <p>
               Implement the <code>GET</code>, <code>POST</code>, and{" "}
@@ -33,9 +37,10 @@ export default function Home() {
               reflect the change.
             </p>
             <p>
-              There should also be a way to show all the user's favorite
+              There should also be a way to show all the user&apos;s favorite
               listings. You can implement this in a separate page or as a
-              "filter" on the <Link href="/listings">listings page</Link>.
+              &ldquo;filter&rdquo; on the{" "}
+              <Link href="/listings">listings page</Link>.
             </p>
             <p>
               The <code>favorites</code> API should also support optimistic
@@ -44,13 +49,15 @@ export default function Home() {
           </li>
           <li>
             <header>
-              <strong>Task 2</strong>
+              <h2>
+                <strong>Task 2</strong>
+              </h2>
             </header>
             <p>
-              Implement an "infini-loader" in the <code>Listings</code>{" "}
-              component. The infini-loader should fetch more listings when the
-              user scrolls near the bottom of the page. The{" "}
-              <Link href="/listings">listings page</Link> is already
+              Implement an &ldquo;infini-loader&rdquo; in the{" "}
+              <code>Listings</code> component. The infini-loader should fetch
+              more listings when the user scrolls near the bottom of the page.
+              The <Link href="/listings">listings page</Link> is already
               implemented, but all the items are loaded at once.
             </p>
             <p>In order to do this, you need to:</p>
@@ -61,34 +68,39 @@ export default function Home() {
                 close enough to load the next page/batch of products.
               </li>
             </ul>
-            <p>
-              For this task, you are not allowed to install any libraries that
-              help you with infinite scrolling.
+            <p className="font-semibold">
+              For this task, you are <em>not</em> allowed to install any
+              libraries that help you with infinite scrolling.
             </p>
           </li>
         </ol>
-      </section>
-
-      <section>
-        <header>
-          <strong>Additional information</strong>
-        </header>
 
         <p>
           You are free to implement the tasks in either JavaScript or
           TypeScript. And you can also ignore TailwindCSS and use any other
           preferred way of styling.
         </p>
+      </section>
+
+      <hr className="my-6" />
+
+      <section>
+        <header>
+          <h2>
+            <strong>Additional information</strong>
+          </h2>
+        </header>
 
         <p>
           When evaluating the test, we will put extra emphasis on the quality of
           code, how well you follow best practices, and how you structure your
           code. In addition we will evaluate use of correct semantic HTML and
-          responsiveness. The graphic "look" of the app is not as important.
+          responsiveness. The graphic &ldquo;look&rdquo; of the app is not as
+          important.
         </p>
       </section>
 
-      <section>
+      <section className="mt-12">
         <h2>
           <strong>Resources</strong>
         </h2>
