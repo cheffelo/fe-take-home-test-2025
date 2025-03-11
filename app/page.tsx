@@ -19,11 +19,11 @@ export default function Home() {
       <section>
         <ol className="flex flex-col gap-4">
           <li>
-            <p>
+            <header>
               <h2>
                 <strong>Task 1</strong>
               </h2>
-            </p>
+            </header>
             <p>
               Implement the <code>GET</code>, <code>POST</code>, and{" "}
               <code>DELETE</code> API for the favorites API. The API can
